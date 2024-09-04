@@ -13,4 +13,4 @@ def spacecounter(s1, s2):
     diff = count1 - count2
     return diff
 
-print(spacecounter("abs ask same answer", "adw arg"))
+print(spacecounter("abs ask same  answer", "adw arg"))
