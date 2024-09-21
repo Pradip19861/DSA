@@ -1,13 +1,15 @@
-def maxSubArray( nums):
+def maxSubArray( nums,k):
         sum = 0
-        max_sum = float('-inf')
-        
+        count = 0
+        max_sum = 0
         for num in nums:
             sum += num
             max_sum = max(max_sum, sum)
             if sum < 0:
                 sum = 0
-                
-        return max_sum
+            if max_sum % k == 0:
+                count += 1
+        return count
+        
 
-print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+print(maxSubArray([-2,2],2))
