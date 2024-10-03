@@ -3,7 +3,7 @@ def armstrong(n):
     temp = n
     while temp > 0:
         digit = temp % 10
-        sum += digit ** 3
+        sum += digit ** digit
         temp //= 10
     return sum == n
 
