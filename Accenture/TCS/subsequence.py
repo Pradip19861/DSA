@@ -6,4 +6,4 @@ def subsequence(arr):
             count += 1
     return count
 
-print(subsequence([5, 3, 1, 3, 3]))  # Output: 3, as there are 3 unique elements (1, 3, 5)
+print(subsequence([1, 1, 1, 3, 3, 3]))  # Output: 3, as there are 3 unique elements (1, 3, 5)
